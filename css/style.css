@@ -644,7 +644,7 @@ portfolio-item:last-child {
 .modal {
   position: relative;
   width: 528px;
-  height: 521px;
+  height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -675,7 +675,6 @@ portfolio-item:last-child {
   pointer-events: none;
 }
 .modal-text {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -687,27 +686,20 @@ portfolio-item:last-child {
   color: #212121;
 }
 .connection-field {
-  position: relative;
-  width: 448px;
-  height: 40px;
-  border: none
-  border-radius: 4px;
   margin-left: 40px;
   margin-top: 30px;
 }
-.modal-input {
-  width: 100%;
-  height: 100%;
+.modal-item {
+  margin-top: 28px;
+}
+.modal-item:first-child {
+  margin-top: 30px;
+}
+.input {
+  width: 448px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-bottom: 18px;
-  color: var(--secondary-text-color);
-  transform: translateY(-110%);
 }
 .commentary {
   margin-top: 10px;
@@ -720,33 +712,57 @@ portfolio-item:last-child {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 40px;
+  margin-top: 4px;
 }
 .textarea::placeholder {
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
-padding-left: 16px;
-padding-top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding-left: 16px;
+  padding-top: 12px;
 }
 .license {
   display: flex;
 }
 .checkbox {
-margin-left: 52px;
-margin-right: 8px;
-margin-top: 25px;
+  margin-left: 52px;
+  margin-right: 8px;
+  margin-top: 25px;
 }
 .checkbox-text {
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
-margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-top: 20px;
+}
+.submit-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+.submit-button {
+  margin-left: 164px;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  color: var(--white-color);
+  background: var(--hover-color);
+  border-radius: 4px;
+  border: none;
+}
+.submit-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.53;
+  letter-spacing: 0.06em;
 }
