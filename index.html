@@ -401,23 +401,27 @@
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
             <form>
         <ul class="connection-field">
-            <li class="modal-item">    
+            <li class="modal-item">
+             <label class="label">Имя</label>       
             <input class="input" type="text" name="Имя" id="user_name"></input>
             </li>
             <li class="modal-item">
+            <label class="label">Телефон</label>
             <input class="input" type="tel" name="Телефон" id="telephone"></input>
             </li>
             <li class="modal-item">
+            <label class="label">Почта</label>
             <input class="input" type="email" name="Почта" id="email"></input>
             </li>
         </ul> 
         <p class="commentary">Комментарий</p>
         <textarea class="textarea" placeholder="Введите текст"></textarea>
         <div class="license">
-        <input class="checkbox" type="checkbox" name="checkbox"></input>
+        <label for="checkbox"></label>    
+        <input class="checkbox" type="checkbox" name="checkbox" id="checkbox"></input>
         <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="submit-link" href="">Условия договора</a></p>
         </div>
-        <button class="submit-button"><span class="submit-text">Отправить</span></button>
+        <button class="submit-button" type="submit"><span class="submit-text">Отправить</span></button>
         </form>
     <script src="./js/modal.js"></script>
 </body>
