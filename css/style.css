@@ -708,6 +708,10 @@ portfolio-item:last-child {
   color: var(--secondary-text-color);
   transform: translateY(-100%);
 }
+.modal-icon {
+  width: 13px;
+  height: 13px;
+}
 .input {
   width: 448px;
   height: 40px;
