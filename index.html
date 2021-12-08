@@ -397,39 +397,37 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>`
+    <div class="backdrop is-hidde" data-modal>`
         <div class="modal">
             <button type="button" class="close-button" data-modal-close>
                 <svg class="close-cross-icon">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-            <form>
-                <ul class="connection-field">
-                    <li class="modal-item">
-                        <label class="label">Имя</label>
-                        <svg class="modal-icon">
-                            <use href="./images/sprite.svg#modal-name"></use>
-                        </svg>
-                        <input class=" input" type="text" name="Имя" id="user_name"></input>
-                    </li>
-                    <li class="modal-item">
-                        <label class="label">Телефон</label>
-                        <svg class="modal-icon">
-                            <use href="./images/sprite.svg#modal-phone"></use>
-                        </svg>
-                        <input class="input" type="tel" name="Телефон" id="telephone"></input>
-                    </li>
-                    <li class="modal-item">
-                        <label class="label">Почта</label>
-                        <svg class="modal-icon">
-                            <use href="./images/sprite.svg#modal-mail"></use>
-                        </svg>
-                        <input class="input" type="email" name="Почта" id="email"></input>
-                    </li>
-                </ul>
-                <p class="commentary">Комментарий</p>
+            <form class="modal-form">
+                <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="div-input">
+                    <label class="label">Имя</label>
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#modal-name"></use>
+                    </svg>
+                    <input class="input" type="text" name="Имя" id="user_name"></input>
+                </div>
+                <div class="div-input">
+                    <!-- <label class="label">Телефон</label>
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#modal-phone"></use>
+                    </svg> -->
+                    <input class="input" type="tel" name="Телефон" id="telephone"></input>
+                </div>
+                <div class="div-input">
+                    <!-- <label class="label">Почта</label>
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#modal-mail"></use>
+                    </svg> -->
+                    <input class="input" type="email" name="Почта" id="email"></input>
+                </div>
+                <!-- <p class="commentary">Комментарий</p> -->
                 <textarea class="textarea" placeholder="Введите текст"></textarea>
                 <div class="license">
                     <label for="checkbox"></label>
@@ -439,7 +437,8 @@
                 </div>
                 <button class="submit-button" type="submit"><span class="submit-text">Отправить</span></button>
             </form>
-            <script src="./js/modal.js"></script>
+        </div>
+        <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
