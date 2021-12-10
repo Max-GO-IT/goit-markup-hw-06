@@ -709,8 +709,8 @@ portfolio-item:last-child {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   margin-left: 15px;
   transform: translateY(-50%);
 }
@@ -722,6 +722,12 @@ portfolio-item:last-child {
   margin-top: 4px;
   padding-left: 42px;
   outline: none;
+}
+.input:focus {
+  border-color: var(--hover-color);
+}
+.input:focus + .modal-icon {
+  fill: var(--hover-color);
 }
 .div-textarea {
   margin-top: 10px;
