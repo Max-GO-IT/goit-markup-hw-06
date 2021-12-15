@@ -673,7 +673,7 @@ portfolio-item:last-child {
 .close-cross-icon:hover {
   fill: var(--hover-color);
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -754,10 +754,13 @@ portfolio-item:last-child {
   padding-left: 16px;
   padding-top: 12px;
 }
-
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .checkbox {
-  margin-top: 25px;
-  margin-left: 12px;
+  display: none;
 }
 .checkbox-text {
   display: flex;
@@ -768,7 +771,7 @@ portfolio-item:last-child {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 20px;
-  margin-left: 8px;
+  align-items: center;
 }
 .checkbox-text span {
   display: flex;
@@ -778,17 +781,21 @@ portfolio-item:last-child {
   border: 2px solid var(--primary-text-color);
   align-items: center;
   justify-content: center;
+  margin-right: 7px;
 }
 .check {
   width: 11px;
   height: 8px;
-  fill: var(--hover-color);
+  fill: var(--white-color);
+}
+.checkbox:checked + .checkbox-text span {
+  background-color: var(--hover-color);
+  border:none;
 }
 .submit-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 0.58;
   letter-spacing: 0.03em;
   color: var(--hover-color);
 }
