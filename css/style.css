@@ -551,10 +551,7 @@ img {
   fill: var(--white-color);
 }
 
-.footer-icon-link:hover {
-  background: var(--hover-color);
-}
-
+.footer-icon-link:hover,
 .footer-icon-link:focus {
   background: var(--hover-color);
 }
