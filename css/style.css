@@ -570,19 +570,44 @@ img {
     color: var(--white-color);
 }
 .footer-submit-label {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-submit-field {
     width: 358px;
     height: 50px;
+    padding-left: 63px;
     margin-top: 20px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: #2f303a;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-submit-field:hover {
+  border-color: var(--hover-color);
+}
+.footer-button {
+  padding: 10px;
+  padding-left: 28px;
+  margin-left: 12px;
+  font-style: 500;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--white-color);
+  border-radius: 4px;
+  border: none;
+  background: var(--hover-color);
+}
+footer-button:hover {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* СЕКЦИЯ КНОПОК В ПОРТФОЛИО */
