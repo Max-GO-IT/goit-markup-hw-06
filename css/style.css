@@ -732,6 +732,10 @@ portfolio-item:last-child {
   height: 15px;
   margin-left: 15px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon:focus {
+  fill:var(--hover-color);
 }
 .input {
   width: 100%;
@@ -741,10 +745,14 @@ portfolio-item:last-child {
   margin-top: 4px;
   padding-left: 42px; 
   outline: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus {
   border-color: var(--hover-color);
+}
+.input:focus+.modal-icon{
+  border-color: var(--hover-color);
+  fill:var(--hover-color);
 }
 .div-textarea {
   margin-top: 10px;
